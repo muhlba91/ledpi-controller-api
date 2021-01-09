@@ -1,0 +1,70 @@
+---
+openapi: 3.0.1
+info:
+  title: LED-Pi - Raspberry Pi WS2801 LED Controller
+  description: This document describes the API specification for the `LED-Pi - Raspberry Pi WS2801 LED Controller`.
+  contact:
+    url: https://github.com/muhlba91/ledpi-controller
+  version: 0.0.1
+tags:
+  - name: state
+    description: Managing the light's state.
+paths:
+  /api/v1/state:
+    get:
+      tags:
+        - state
+      summary: Gets the current state.
+      operationId: state.get
+      responses:
+        200:
+          description: Successful operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/State'
+    post:
+      tags:
+        - state
+      summary: Update the light's state. Only updates the attributes sent.
+      operationId: state.post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/State'
+        required: true
+      responses:
+        200:
+          description: Successful operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/State'
+components:
+  schemas:
+    State:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: True if the operation was successful (return value only).
+          example: true
+        state:
+          type: string
+          description: Describes the light state('on' or 'off')
+          example: on
+        rgb_color:
+          type: string
+          description: The RGB light color in Hex.
+          example: '#ffffff'
+        leds:
+          type: integer
+          format: int64
+          description: The number of LEDs on the strip (cannot be updated).
+          example: 160
+        brightness:
+          type: number
+          format: float
+          description: The brightness of the LEDs (0.0 - 1.0).
+          example: 1.0
