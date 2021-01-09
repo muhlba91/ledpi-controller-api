@@ -1,7 +1,7 @@
 # Flask API for LED-Pi - Raspberry Pi WS2801 LED Controller
 
-[![](https://img.shields.io/github/license/muhlba91/ledpi-controller-app?style=for-the-badge)](LICENSE)
-[![](https://img.shields.io/github/workflow/status/muhlba91/ledpi-controller-app/Python%20package?style=for-the-badge)](https://github.com/muhlba91/ledpi-controller/actions)
+[![](https://img.shields.io/github/license/muhlba91/ledpi-controller-api?style=for-the-badge)](LICENSE)
+[![](https://img.shields.io/github/workflow/status/muhlba91/ledpi-controller-api/Python%20package?style=for-the-badge)](https://github.com/muhlba91/ledpi-controller/actions)
 
 This repository contains a **Flask API** to control a **WS2801 LED strip** connected to a Raspberry Pi
 using [ledpi-controller](https://github.com/muhlba91/ledpi-controller).
