@@ -1,0 +1,11 @@
+[Unit]
+Description=LedPi API service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/ledpi
+ExecStart=poetry run python apps/main.py -c config.yml -s state.yml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
