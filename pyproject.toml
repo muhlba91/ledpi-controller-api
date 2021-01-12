@@ -30,6 +30,7 @@ python = "^3.9"
 flask = "^1.1.2"
 #ledpi-controller = "*"
 
+ledpi-controller = "^1.0.0"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"
 pytest-cov = "^2.10.1"
