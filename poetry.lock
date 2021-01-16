@@ -1,6 +1,6 @@
 [[package]]
 name = "adafruit-blinka"
-version = "5.9.2"
+version = "5.11.0"
 description = "CircuitPython APIs for non-CircuitPython versions of Python such as CPython on Linux and MicroPython."
 category = "main"
 optional = false
@@ -36,7 +36,7 @@ adafruit-circuitpython-busdevice = "*"
 
 [[package]]
 name = "adafruit-platformdetect"
-version = "2.24.0"
+version = "2.26.0"
 description = "Platform detection for use by libraries like Adafruit-Blinka."
 category = "main"
 optional = false
@@ -218,7 +218,7 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 name = "identify"
-version = "1.5.11"
+version = "1.5.12"
 description = "File identification library for Python"
 category = "dev"
 optional = false
@@ -259,7 +259,7 @@ i18n = ["Babel (>=0.8)"]
 
 [[package]]
 name = "ledpi-controller"
-version = "1.0.0"
+version = "1.0.1"
 description = "Raspberry Pi API component to control a WS2801 LED strip."
 category = "main"
 optional = false
@@ -374,7 +374,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pyftdi"
-version = "0.52.0"
+version = "0.52.9"
 description = "FTDI device driver (pure Python)"
 category = "main"
 optional = false
@@ -386,7 +386,7 @@ pyusb = ">=1.0.0"
 
 [[package]]
 name = "pygments"
-version = "2.7.3"
+version = "2.7.4"
 description = "Pygments is a syntax highlighting package written in Python."
 category = "dev"
 optional = false
@@ -518,7 +518,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "virtualenv"
-version = "20.2.2"
+version = "20.3.1"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
@@ -532,7 +532,7 @@ six = ">=1.9.0,<2"
 
 [package.extras]
 docs = ["proselint (>=0.10.2)", "sphinx (>=3)", "sphinx-argparse (>=0.2.5)", "sphinx-rtd-theme (>=0.4.3)", "towncrier (>=19.9.0rc1)"]
-testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", "pytest (>=4)", "pytest-env (>=0.6.2)", "pytest-freezegun (>=0.4.1)", "pytest-mock (>=2)", "pytest-randomly (>=1)", "pytest-timeout (>=1)", "pytest-xdist (>=1.31.0)", "packaging (>=20.0)", "xonsh (>=0.9.16)"]
+testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", "pytest (>=4)", "pytest-env (>=0.6.2)", "pytest-freezegun (>=0.4.1)", "pytest-mock (>=2)", "pytest-randomly (>=1)", "pytest-timeout (>=1)", "packaging (>=20.0)", "xonsh (>=0.9.16)"]
 
 [[package]]
 name = "webcolors"
@@ -557,11 +557,11 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "913ec7b5a0d7f113c3d82e8b7982b25b43557c89cb99f4562cb2cd96b327a574"
+content-hash = "b086ad95f9d7594eea7562848e3c2536a97bc107a09d3acb93409afb209b3f27"
 
 [metadata.files]
 adafruit-blinka = [
-    {file = "Adafruit-Blinka-5.9.2.tar.gz", hash = "sha256:6dc7686a42e4ac31d5ced095abe4a26ef30b2025a6e81191074115c002f21faf"},
+    {file = "Adafruit-Blinka-5.11.0.tar.gz", hash = "sha256:494e3f2316c0b11b2149e6e907e24b97e937c0c390205ce8a066aa08e45b367d"},
 ]
 adafruit-circuitpython-busdevice = [
     {file = "adafruit-circuitpython-busdevice-5.0.3.tar.gz", hash = "sha256:c25eb848ca72590195772464dbadbc18a5589f0c7b34dff39945c4deeee602e1"},
@@ -570,7 +570,7 @@ adafruit-circuitpython-ws2801 = [
     {file = "adafruit-circuitpython-ws2801-0.10.3.tar.gz", hash = "sha256:1f20ad78789f76a50ef8f0df7c8586e57d0f316dc6c48e58d8f8b020687e36bf"},
 ]
 adafruit-platformdetect = [
-    {file = "Adafruit-PlatformDetect-2.24.0.tar.gz", hash = "sha256:817721a4a60e975d19e5378d44f3b7211e21fd027c4c8c3a2a4fd7a74ccfe870"},
+    {file = "Adafruit-PlatformDetect-2.26.0.tar.gz", hash = "sha256:5f1a71e52a84101342ff1279e51b716f5e783a381ef882b5674afffd2a5efff6"},
 ]
 adafruit-pureio = [
     {file = "Adafruit_PureIO-1.1.8.tar.gz", hash = "sha256:c6702589aa4bf6dc785e5f4e4ed7e68bef1d93d180633abe548fe3f39d36cad5"},
@@ -678,8 +678,8 @@ flask = [
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
 ]
 identify = [
-    {file = "identify-1.5.11-py2.py3-none-any.whl", hash = "sha256:7aef7a5104d6254c162990e54a203cdc0fd202046b6c415bd5d636472f6565c4"},
-    {file = "identify-1.5.11.tar.gz", hash = "sha256:b2c71bf9f5c482c389cef816f3a15f1c9d7429ad70f497d4a2e522442d80c6de"},
+    {file = "identify-1.5.12-py2.py3-none-any.whl", hash = "sha256:18994e850ba50c37bcaed4832be8b354d6a06c8fb31f54e0e7ece76d32f69bc8"},
+    {file = "identify-1.5.12.tar.gz", hash = "sha256:892473bf12e655884132a3a32aca737a3cbefaa34a850ff52d501773a45837bc"},
 ]
 iniconfig = [
     {file = "iniconfig-1.1.1-py2.py3-none-any.whl", hash = "sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"},
@@ -694,8 +694,8 @@ jinja2 = [
     {file = "Jinja2-2.11.2.tar.gz", hash = "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0"},
 ]
 ledpi-controller = [
-    {file = "ledpi-controller-1.0.0.tar.gz", hash = "sha256:f0bddf394e8733e1a07ea755d22454736bf9f639056fd42afdaf9facdf6e48c6"},
-    {file = "ledpi_controller-1.0.0-py3-none-any.whl", hash = "sha256:da4a1672ce622fd2cf08839f8a044755514c4b266e5ddfac9d0b3e88528003ca"},
+    {file = "ledpi-controller-1.0.1.tar.gz", hash = "sha256:8d4a1d6ef14621457073108556326d5e350e04cd4790b0a98ffcd91cc3b74961"},
+    {file = "ledpi_controller-1.0.1-py3-none-any.whl", hash = "sha256:5d28a91bb8385e15e659b4b9178de148da54006039850018b8329c7a92ae2caa"},
 ]
 markupsafe = [
     {file = "MarkupSafe-1.1.1-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:09027a7803a62ca78792ad89403b1b7a73a01c8cb65909cd876f7fcebd79b161"},
@@ -773,12 +773,12 @@ pyflakes = [
     {file = "pyflakes-2.2.0.tar.gz", hash = "sha256:35b2d75ee967ea93b55750aa9edbbf72813e06a66ba54438df2cfac9e3c27fc8"},
 ]
 pyftdi = [
-    {file = "pyftdi-0.52.0-py3-none-any.whl", hash = "sha256:f26d61fe14a3d089ea7700e774501c52ce3312f3522763a407cd33988124bd5e"},
-    {file = "pyftdi-0.52.0.tar.gz", hash = "sha256:5f591cefc87c89177798b53c70914fadff54717433afc9ccb50213d053e87ee6"},
+    {file = "pyftdi-0.52.9-py3-none-any.whl", hash = "sha256:e8123dc3663ff3ac89eac962774e755b611e7f7202e9e36f6b6eb915fedc53f1"},
+    {file = "pyftdi-0.52.9.tar.gz", hash = "sha256:21e84163a48057de9e4eba6efcb42e51994868b702e1eabdbd2a8cbddad66b66"},
 ]
 pygments = [
-    {file = "Pygments-2.7.3-py3-none-any.whl", hash = "sha256:f275b6c0909e5dafd2d6269a656aa90fa58ebf4a74f8fcf9053195d226b24a08"},
-    {file = "Pygments-2.7.3.tar.gz", hash = "sha256:ccf3acacf3782cbed4a989426012f1c535c9a90d3a7fc3f16d231b9372d2b716"},
+    {file = "Pygments-2.7.4-py3-none-any.whl", hash = "sha256:bc9591213a8f0e0ca1a5e68a479b4887fdc3e75d0774e5c71c31920c427de435"},
+    {file = "Pygments-2.7.4.tar.gz", hash = "sha256:df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
@@ -907,8 +907,8 @@ urllib3 = [
     {file = "urllib3-1.26.2.tar.gz", hash = "sha256:19188f96923873c92ccb987120ec4acaa12f0461fa9ce5d3d0772bc965a39e08"},
 ]
 virtualenv = [
-    {file = "virtualenv-20.2.2-py2.py3-none-any.whl", hash = "sha256:54b05fc737ea9c9ee9f8340f579e5da5b09fb64fd010ab5757eb90268616907c"},
-    {file = "virtualenv-20.2.2.tar.gz", hash = "sha256:b7a8ec323ee02fb2312f098b6b4c9de99559b462775bc8fe3627a73706603c1b"},
+    {file = "virtualenv-20.3.1-py2.py3-none-any.whl", hash = "sha256:14b34341e742bdca219e10708198e704e8a7064dd32f474fc16aca68ac53a306"},
+    {file = "virtualenv-20.3.1.tar.gz", hash = "sha256:0c111a2236b191422b37fe8c28b8c828ced39aab4bf5627fa5c331aeffb570d9"},
 ]
 webcolors = [
     {file = "webcolors-1.11.1-py3-none-any.whl", hash = "sha256:b8cd5d865a25c51ff1218f0c90d0c0781fc64312a49b746b320cf50de1648f6e"},
