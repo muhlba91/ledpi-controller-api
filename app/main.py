@@ -1,11 +1,12 @@
 """Flask application for the WS2801 controller."""
 
 import argparse
+
 from flask import Flask, jsonify, request
 from ledpi_controller.controller import Controller
-from ledpi_controller.server import Server
-from ledpi_controller.yaml_processor import StateYamlProcessor
-from ledpi_controller.yaml_processor import YamlProcessor
+from ledpi_controller.yaml_processor import StateYamlProcessor, YamlProcessor
+
+from app.server import Server
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--config", required=True)
@@ -25,9 +26,9 @@ def create_app(config, state_file):
     def state_method():
         if request.method == "POST":
             json = request.get_json(force=True)
-            server.set_status(json)
+            server.set_state(json)
 
-        return jsonify({"success": True, **server.get_status()})
+        return jsonify({"success": True, **server.get_state()})
 
     return app
 
